@@ -20,6 +20,7 @@
 .reaction-con {
   background-color: #fff6f5;
 }
+
 .reaction-con p:nth-child(2) {
   color: #e75a60;
   font-weight: 600;
@@ -30,6 +31,7 @@
 .memory-con {
   background-color: #fffbf2;
 }
+
 .memory-con p:nth-child(2) {
   color: #e9c67c;
   font-weight: 600;
@@ -40,6 +42,7 @@
 .verbal-con {
   background-color: #f2fbfa;
 }
+
 .verbal-con p:nth-child(2) {
   color: #53b99b;
   font-weight: 600;
@@ -50,6 +53,7 @@
 .visual-con {
   background-color: #f3f3fd;
 }
+
 .visual-con p:nth-child(2) {
   color: #3744a8;
   font-weight: 600;
@@ -76,36 +80,47 @@ button {
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 1440px) {
+button:hover {
+  background-color: #232b41;
+}
+
+@media screen and (min-width: 700px) {
   main {
     display: flex;
-    box-shadow: 10px 10px #f4f7fe;
     border-radius: 30px;
-    width: 700px;
+    width: 800px;
+    margin-inline: 30px 50px;
   }
 
   .sect-one {
+    /* border: 2px solid black; */
     width: 50%;
     border-radius: 30px;
     height: 400px;
+    position: relative;
+    left: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 
   .sect-one h4 {
     margin-top: 20px;
   }
 
-  .sect-one > p {
+  .sect-one>p {
     width: 210px;
   }
 
   /* lower part media query */
   .sect-two {
-    width: 50%;
+    width: 55%;
     height: 400px;
     border-radius: 0px 30px 30px 0px;
-    box-shadow: 10px 10px #f4f7fe;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding-left: 40px;
     /* border: 2px solid red; */
   }
 
